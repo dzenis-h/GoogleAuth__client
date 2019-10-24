@@ -52,7 +52,7 @@ class GoogleAuth extends Component {
         </button>
       );
     } else {
-      // Uswr is NOT loggged in
+      // User is NOT logged in
       return (
         <button onClick={this.onSignInClick} className="ui red google button">
           <i className="google icon" />
