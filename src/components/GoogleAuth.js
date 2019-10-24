@@ -15,7 +15,7 @@ class GoogleAuth extends Component {
         .then(() => {
           // Creating an OAuth instance
           this.auth = window.gapi.auth2.getAuthInstance();
-          // Getting the current valu -> true || false
+          // Getting the current value -> true || false
           this.onAuthChange(this.auth.isSignedIn.get());
           // Listining for changes to reflect the state in real-tme
           this.auth.isSignedIn.listen(this.onAuthChange);
