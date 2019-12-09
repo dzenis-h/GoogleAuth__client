@@ -8,7 +8,7 @@ class GoogleAuth extends Component {
       window.gapi.client
         .init({
           clientId:
-            "797401886567-9cumct9mrt3v2va409rasa7fa6fq02hh.apps.googleusercontent.com", // This might be deleted
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
           // "Google Cloud -> New Project -> Credentials -> Web client -> ClientId",
           scope: "email"
         })
