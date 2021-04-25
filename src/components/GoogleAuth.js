@@ -34,10 +34,11 @@ class GoogleAuth extends Component {
   };
 
   renderAuthButton() {
-    if (this.props.isSignedIn === null) {
+    const { isSignedIn } = this.props;
+    if (isSignedIn === null) {
       // Currently we don't know if the user is logged in
       return null;
-    } else if (this.props.isSignedIn) {
+    } else if (isSignedIn) {
       // If this ends up being true, user is logged in
       return (
         <button onClick={this.onSignOutClick} className="ui grey google button">
